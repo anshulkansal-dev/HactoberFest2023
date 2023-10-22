@@ -46,8 +46,8 @@ Add your name to the `CONTRIBUTING.md` file using the below convention:
 - GitHub: [GitHub account name](GitHub link)
 ```
 
-### 2. **Create Your Project**: 
-Feel free to create any type of project you want. This can be a new feature, a bug fix, or anything else that enhances this repository. Just follow the same steps as mentioned above.
+### 2. **Add Your Project**: 
+Feel free to Add any type of project you want. This can be a new feature, a bug fix, or anything else that enhances this repository. Just follow the same steps as mentioned above.
 
 ## Code of Conduct
 
