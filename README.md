@@ -51,7 +51,7 @@ Feel free to Add any type of project you want. This can be a new feature, a bug 
 
 ## Code of Conduct
 
-Please note that we have a Code of Conduct in place to ensure a welcoming and inclusive environment for all contributors. By participating in this project, you agree to abide by the Code of Conduct. You can review the full Code of Conduct in the [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md) file.
+Please note that we have a Code of Conduct in place to ensure a welcoming and inclusive environment for all contributors. By participating in this project, you agree to abide by the Code of Conduct. You can review the full Code of Conduct in the [CODE_OF_CONDUCT.md](https://github.com/amanyadav89/HactoberFest2023/blob/main/Code_of_conduct.md) file.
 
 If you encounter any issues or have questions, please don't hesitate to reach out to our community. We value and appreciate your contributions and collaboration.
 
