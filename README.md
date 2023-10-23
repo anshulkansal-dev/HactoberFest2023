@@ -6,6 +6,8 @@ Welcome to HacktoberFest-2023 and thank you for your interest in contributing to
 
 Hacktoberfest is an annual event that celebrates open source by encouraging meaningful contributions to open source projects. It's a great opportunity for you to get involved in the open-source community, learn, and collaborate with others.
 
+**If you liked the repository, Kindly Star(★) it !!**
+
 ### Create your first Pull Request 🔥(PR) and help contributing to open-source and help everyone with this repository.
 
 ## How to Contribute
