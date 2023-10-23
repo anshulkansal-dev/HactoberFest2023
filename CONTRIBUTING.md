@@ -10,3 +10,9 @@
 - Experience: Experienced
 - Bio: Full Stack Developer
 - GitHub: [Kaustubh Pandey](https://github.com/Kaustubh-2003)
+
+#### Name : [Anshul Kansal](https://github.com/anshulkansal04)
+
+- Experience: Moderate
+- Bio: Full Stack Developer
+- GitHub: [Anshul Kansal](https://github.com/anshulkansal04)
