@@ -7,6 +7,6 @@
 
 #### Name : [Kaustubh Pandey](https://github.com/Kaustubh-2003)
 
--Experience: Beginer
--Bio : Web Developer
--Github:[Kaustubh Pandey](https://github.com/Kaustubh-2003)
+- Experience: Experienced
+- Bio: Full Stack Developer
+- GitHub: [Kaustubh Pandey](https://github.com/Kaustubh-2003)
