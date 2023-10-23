@@ -10,27 +10,101 @@ Hacktoberfest is an annual event that celebrates open source by encouraging mean
 
 ### Create your first Pull Request 🔥(PR) and help contributing to open-source and help everyone with this repository.
 
-## How to Contribute
+# How to Contribute
 
 If this is your first time contributing to an open-source project, don't worry; it's easier than you think! Here are the steps to get started:
 
-1. **Fork the Repository**: Click the "Fork" button at the top right of this repository to create your copy of it.
+### Fork this repository
 
-2. **Clone Your Fork**: Use Git to clone your fork to your local machine:
+Fork this repository by clicking on the fork button on the top of this page.
+This will create a copy of this repository in your account.
 
-3. **Create a Branch**: Create a new branch for your work. This keeps your changes isolated from the main branch (usually named "main" or "master):
+## Clone the repository
 
-4. **Make Changes**: Make your desired changes to the code or documentation.
+<img align="right" width="300" src="https://firstcontributions.github.io/assets/Readme/clone.png" alt="clone this repository" />
 
-5. **Commit Your Changes**: After making your changes, commit them to your branch:
+Now clone the forked repository to your machine. Go to your GitHub account, open the forked repository, click on the code button and then click the _copy to clipboard_ icon.
 
-6. **Push to Your Fork**: Push your changes to your fork on GitHub:
+Open a terminal and run the following git command:
 
-7. **Open a Pull Request**: Go to the original repository and click the "New Pull Request" button. Give your pull request a meaningful title and description, and submit it.
+```
+git clone "url you just copied"
+```
 
-8. **Review and Collaborate**: Your pull request will be reviewed by project maintainers. Be prepared to make changes or address feedback.
+where "url you just copied" (without the quotation marks) is the url to this repository (your fork of this project). See the previous steps to obtain the url.
 
-9. **Celebrate**: Your contribution will be merged, and you'll be part of the Hacktoberfest celebration! 🎉
+<img align="right" width="300" src="https://firstcontributions.github.io/assets/Readme/copy-to-clipboard.png" alt="copy URL to clipboard" />
+
+For example:
+
+```
+git clone https://github.com/your-name/Mini-Projects.git
+```
+
+where `your-name` is your GitHub username. Here you're copying the contents of the Mini-Projects repository from GitHub to your computer.
+
+## Create a branch
+
+Change to the repository directory on your computer (if you are not already there):
+
+```
+cd Mini-Projects
+```
+
+Now create a branch using the `git switch` command:
+
+```
+git switch -c your-new-branch-name
+```
+
+For example:
+
+```
+git switch -c add-mini
+```
+## Make necessary changes and commit those changes
+
+<img align="right" width="450" src="https://firstcontributions.github.io/assets/Readme/git-status.png" alt="git status" />
+
+After Making Necessary Changes
+If you go to the project directory and execute the command `git status`, you'll see there are changes.
+
+Add those changes to the branch you just created using the `git add` command:
+
+```
+git add .
+```
+Now commit those changes using the `git commit` command:
+
+```
+git commit -m "Add your message"
+```
+
+replacing `your message` with your desired message.
+
+## Push changes to GitHub
+
+Push your changes using the command `git push`:
+
+```
+git push -u origin your-branch-name
+```
+
+replacing `your-branch-name` with the name of the branch you created earlier.
+
+## Submit your changes for review
+
+If you go to your repository on GitHub, you'll see a `Compare & pull request` button. Click on that button.
+
+<img style="float: right;" src="https://firstcontributions.github.io/assets/Readme/compare-and-pull.png" alt="create a pull request" />
+
+Now submit the pull request.
+
+<img style="float: right;" src="https://firstcontributions.github.io/assets/Readme/submit-pull-request.png" alt="submit pull request" />
+
+Soon I'll be merging all your changes into the main branch of this project. You will get a notification email once the changes have been merged.\
+
+**Your contribution will be merged, and you'll be part of the Hacktoberfest celebration! 🎉**
 
 # How to contribute to this project
 
