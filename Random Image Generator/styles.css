@@ -61,14 +61,17 @@ h2{
     cursor: pointer;
     transition: background-color 300ms ease-in-out;
 }
-
-.gallery img {
-    max-width: 100%;
-    height: auto;
+.gallery img{
+    width: 400px;
+    height: 250px;
+    object-fit: cover;
     border-radius: 5px;
     margin: 5px;
 }
 
+.gallery{
+    display: none;
+}
 
 @media (max-width: 470px) {
     .gallery img {
