@@ -46,3 +46,10 @@ async function fetchImage() {
 }
 
 btnEl.addEventListener("click", fetchImage);
+
+const darkModeToggle = document.querySelector("#dark-mode-toggle");
+const container = document.querySelector(".container")
+
+darkModeToggle.addEventListener("click", () => {
+  container.classList.toggle("dark-mode");
+});
