@@ -75,3 +75,8 @@ h2{
         max-width: 90%;
     }
 }
+
+.dark-mode {
+    background-color: black;
+    color: white;
+  }
