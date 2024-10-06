@@ -1,54 +1,53 @@
 const btnEl = document.getElementById("btn");
 const errorMessageEl = document.getElementById("errorMessage");
 const galleryEl = document.getElementById("gallery");
+const inputEl = document.getElementById("input");
+const darkModeToggle = document.querySelector(".dark-mode-toggle");
+const container = document.querySelector(".container");
 
 async function fetchImage() {
-  const inputValue = document.getElementById("input").value;
+  const inputValue = parseInt(inputEl.value, 10);
 
-  if (inputValue > 10 || inputValue < 1) {
-    errorMessageEl.style.display = "block";
-    errorMessageEl.innerText = "Number should be between 0 and 11";
+  if (isNaN(inputValue) || inputValue < 1 || inputValue > 10) {
+    displayError("Number should be between 1 and 10");
     return;
   }
 
-  imgs = "";
+  btnEl.style.display = "none";
+  galleryEl.innerHTML = '<img src="spinner.svg" alt="Loading..." />';
 
   try {
-    btnEl.style.display = "none";
-    const loading = `<img src="spinner.svg" />`;
-    galleryEl.innerHTML = loading;
-    await fetch(
-      `https://api.unsplash.com/photos?per_page=${inputValue}&page=${Math.round(
-        Math.random() * 1000
-      )}&client_id=B8S3zB8gCPVCvzpAhCRdfXg_aki8PZM_q5pAyzDUvlc`
-    ).then((res) =>
-      res.json().then((data) => {
-        if (data) {
-          data.forEach((pic) => {
-            imgs += `
-            <img src=${pic.urls.small} alt="image"/>
-            `;
-            galleryEl.style.display = "block";
-            galleryEl.innerHTML = imgs;
-            btnEl.style.display = "block";
-            errorMessageEl.style.display = "none";
-          });
-        }
-      })
-    );
+    const response = await fetch(`https://api.unsplash.com/photos?per_page=${inputValue}&page=${Math.floor(Math.random() * 1000)}&client_id=B8S3zB8gCPVCvzpAhCRdfXg_aki8PZM_q5pAyzDUvlc`);
+    if (!response.ok) throw new Error("Network response was not ok");
+
+    const data = await response.json();
+    displayImages(data);
   } catch (error) {
-    console.log(error);
-    errorMessageEl.style.display = "block";
-    errorMessageEl.innerHTML = "An error happened, try again later";
+    displayError("An error occurred, try again later");
+  } finally {
     btnEl.style.display = "block";
-    galleryEl.style.display = "none";
   }
 }
 
-btnEl.addEventListener("click", fetchImage);
+function displayImages(images) {
+  if (!images || images.length === 0) {
+    displayError("No images found");
+    return;
+  }
 
-const darkModeToggle = document.querySelector(".dark-mode-toggle");
-const container = document.querySelector(".container")
+  const imgs = images.map(pic => `<img src="${pic.urls.small}" alt="image" />`).join("");
+  galleryEl.innerHTML = imgs;
+  galleryEl.style.display = "block";
+  errorMessageEl.style.display = "none";
+}
+
+function displayError(message) {
+  errorMessageEl.style.display = "block";
+  errorMessageEl.innerText = message;
+  galleryEl.style.display = "none";
+}
+
+btnEl.addEventListener("click", fetchImage);
 
 darkModeToggle.addEventListener("click", () => {
   container.classList.toggle("dark-mode");
